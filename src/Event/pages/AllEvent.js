@@ -1,12 +1,13 @@
-import React from 'react'
-import UsersEvent from './UsersEvent'
-import EventJumbotron from '../../Event/components/EventJumbotron'
+import React, {useState, useEffect} from 'react'
+import axios from 'axios'
 const AllEvent = () => {
-
+    useEffect(() => {
+        axios.get(`${process.env.REACT_APP_API_URL}/event`)
+        .then(response => console.log(response))
+        .catch(err => alert(err))
+    },[])
     return(
         <React.Fragment>
-            <EventJumbotron/>
-            <UsersEvent/>
             test
         </React.Fragment>
     )

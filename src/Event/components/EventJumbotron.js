@@ -4,9 +4,7 @@ import './EventJumbotron.css'
 const EventJumbotron = props => {
     return(
         <React.Fragment>
-            <SharedJumbotron className="jumbotron-image">
-            {props.children}
-            </SharedJumbotron>
+            <SharedJumbotron className="jumbotron-image"/>
         </React.Fragment>
     )
 }

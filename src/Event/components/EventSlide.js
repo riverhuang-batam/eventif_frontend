@@ -1,6 +1,6 @@
 import React from 'react'
-import SharedJumbotron from '../../Shared/UIElements/SharedJumbotron'
-const EventSlide = () => {
+
+const EventSlide = props => {
     return(
         <React.Fragment>
 

@@ -1,9 +1,10 @@
 import React from 'react'
 
-const SharedButton = () => {
+const SharedButton = props => {
     return(
-        <div>
-            
+        <div className={`btn ${props.className}`}>
+            {props.children}
         </div>
     )
 }
+export default SharedButton;
